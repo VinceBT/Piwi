@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Piwi</title>
+    <link href="//fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="canvas"></div>
+<div id="debug"></div>
+<div id="score"></div>
+<div id="chrono"></div>
+<div id="menu" class="overlay">
+    <div class="logo"></div>
+    <div class="title">Hungry for Apples</div>
+    <div class="subtitle">Piwi is very hungry today.<br>How many apples can he eat in a minute ?</div>
+    <div class="buttons">
+        <div class="button" data-action="start">Play</div>
+    </div>
+</div>
+<div id="picker" class="touchenabled"></div>
+<div id="gameover" class="overlay hidden">
+    <div class="logo"></div>
+    <div class="title"></div>
+    <div class="subtitle">"Thank you !" Said Piwi with a big smile<br>Would you like to play again ?</div>
+    <div class="buttons">
+        <div class="button" data-action="restart">Retry</div>
+    </div>
+</div>
+<script src="//cdn.rawgit.com/imaya/zlib.js/develop/bin/zlib.min.js"></script>
+<script src="bundle.js"></script>
+</body>
+</html>

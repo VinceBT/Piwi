@@ -1,0 +1,159 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+canvas {
+    display: block;
+    transform: translate3d(0, 0, 0);
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#debug {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#chrono {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#picker {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    background-image: url('./assets/touch.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+
+#picker.touchenabled {
+    background-color: #26A69A;
+}
+
+#menu {
+    background-color: #36ab43;
+}
+
+#gameover {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 200ms ease;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay .logo {
+    height: 250px;
+    width: 250px;
+    background-image: url('./assets/parrot.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.overlay .title {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    padding: 0 25px;
+    font-size: 50px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    letter-spacing:2px;
+}
+
+.overlay .subtitle {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    padding: 0 25px;
+    font-size: 25px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    letter-spacing:1px;
+}
+
+.overlay .buttons {
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+}
+
+.overlay .buttons .button {
+    text-align: center;
+    border-radius: 99999px;
+    background-color: #e74c3c;
+    padding: 10px 25px;
+    margin: 10px 0;
+    color: white;
+    font-size: 25px;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    letter-spacing:2px;
+    cursor: pointer;
+}
+
+.overlay .buttons .button:active {
+    opacity: 0.8;
+}
